@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AIコンサルティングのお問い合わせ。">
+    <title>Contact | AI Consulting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">AI<span>Consulting</span></a>
+            <nav class="nav-links" id="nav-links">
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="services.html" class="nav-item">Services</a>
+                <a href="portfolio.html" class="nav-item">Portfolio</a>
+                <a href="blog.html" class="nav-item">Blog</a>
+                <a href="about.html" class="nav-item">About Me</a>
+                <a href="contact.html" class="btn btn-nav">無料相談</a>
+            </nav>
+            <div class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="contact" class="section contact-section" style="padding-top: 140px; min-height: 100vh;">
+            <div class="contact-bg-glow"></div>
+            <div class="container">
+                <div class="section-header text-center fade-in-up text-white">
+                    <h1 class="section-title text-white">Contact</h1>
+                    <p class="section-subtitle text-white border-sub">まずは無料相談から。些細なことでもお気軽にお問い合わせください。</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-form-container glass fade-in-up delay-1">
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="type">ご相談内容 <span class="required">必須</span></label>
+                                <div class="select-wrapper">
+                                    <select id="type" name="type" class="form-control" required>
+                                        <option value="" disabled selected>選択してください</option>
+                                        <option value="consulting">AI導入・時短コンサルについて</option>
+                                        <option value="spot">スポット相談（60分）について</option>
+                                        <option value="creative">クリエイティブ支援について</option>
+                                        <option value="other">その他のお問い合わせ</option>
+                                    </select>
+                                    <i class="fa-solid fa-chevron-down select-icon"></i>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="name">お名前 <span class="required">必須</span></label>
+                                <input type="text" id="name" name="name" class="form-control" placeholder="山田 太郎" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">メールアドレス <span class="required">必須</span></label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="example@mail.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">ご相談・ご要望の詳細 <span class="required">必須</span></label>
+                                <textarea id="message" name="message" class="form-control" rows="5" placeholder="現状のお悩みや実現したいことを自由にお書きください。" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-submit">送信する <i class="fa-solid fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info fade-in-up delay-2">
+                        <div class="info-card glass">
+                            <h3><i class="fa-solid fa-mobile-screen-button"></i> 気軽に相談できる窓口</h3>
+                            <p>LINEやSNSのDMからもご相談を承っております。スキマ時間のお問い合わせに便利です。</p>
+                            
+                            <a href="#line" class="btn btn-line mt-4">
+                                <i class="fa-brands fa-line"></i> 公式LINEで相談する
+                            </a>
+                            
+                            <div class="social-links mt-4">
+                                <a href="#x" class="social-icon" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="#instagram" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#facebook" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card glass mt-4">
+                            <h3><i class="fa-solid fa-clock"></i> 営業時間</h3>
+                            <p class="mb-1">平日: 10:00 - 19:00</p>
+                            <p class="mb-0 text-small text-muted">※土日祝日のサポートはご相談に応じます。<br>※お問い合わせは24時間受け付けております。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">AI<span>Consulting</span></a>
+                    <p class="footer-desc mt-2">AIで、あなたの時間を3割創り出す。<br>個人事業主・副業ワーカーのための伴走型サポート。</p>
+                </div>
+                <div class="footer-links">
+                    <h4 class="footer-title">Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Case Studies</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AI Consulting. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
